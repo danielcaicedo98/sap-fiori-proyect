@@ -104,6 +104,11 @@
           "pattern": "Incidents({key}):?query:",
           "name": "IncidentsObjectPage",
           "target": "IncidentsObjectPage"
+        },
+        {
+          "pattern": "Monitor",
+          "name": "Monitor",
+          "target": "Monitor"
         }
       ],
       "targets": {
@@ -153,6 +158,13 @@
               }
             }
           }
+        },
+        "Monitor": {
+          "type": "view",
+          "viewName": "ns.incidents.view.Monitor",
+          "viewType": "XML",
+          "id": "Monitor",
+          "viewId": "Monitor"
         }
       }
     }

@@ -1,0 +1,21 @@
+/* Contenedor de cámaras: ocupa todo el ancho sin tanto margen */
+.cameraContainer {
+  width: 100%;
+  margin: 0 auto;
+  gap: 0.5rem; /* separación mínima entre cámaras */
+}
+
+/* Imagen de cámara con bordes suaves */
+.cameraImage {
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Peso grande y visible */
+.pesoGrande {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: center;
+}

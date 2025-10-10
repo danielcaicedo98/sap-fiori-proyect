@@ -1,0 +1,38 @@
+<mvc:View
+  controllerName="ns.incidents.controller.Monitor"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  displayBlock="true">
+
+  <Page id="pageMonitor" title="Monitoreo de Cámaras y Peso">
+    <content>
+      
+      <!-- Contenedor para las imágenes -->
+      <HBox id="hboxCamera" justifyContent="Center" alignItems="Start" class="imageContainer">
+        <Image
+          id="imgFront"
+          width="90%"
+          class="cameraImage"
+          layoutData="{ path: '', templateShareable: false, factory: function() {} }"
+        />
+        <Image
+          id="imgBack"
+          width="90%"
+          class="cameraImage"
+          layoutData="{ path: '', templateShareable: false, factory: function() {} }"
+        />
+      </HBox>
+
+      <!-- Información de estado -->
+      <VBox id="hboxStateCamere" class="sapUiSmallMarginTop">
+        <!-- <Text id="statusFront" text="Esperando cámara frontal..." /> -->
+        <!-- <Text id="statusBack" text="Esperando cámara trasera..." /> -->
+        
+        <Title id="titleWeight" text="Peso actual:" level="H3" class="sapUiSmallMarginTop"/>
+        <Text id="pesoText" text="-- kg" design="Bold" class="sapUiLargeMarginBottom"/>
+        <!-- <Text id="statusPeso" text="Esperando conexión con báscula..." /> -->
+      </VBox>
+      
+    </content>
+  </Page>
+</mvc:View>
